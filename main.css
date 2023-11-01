@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #131313;
+   
+}
+
+.container{
+    position: relative;
+    padding: 15px;
+    width: 1300px;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+    
+}
+.container:hover, .secao:hover{
+    transform: none;
+    overflow: visible;
+}
+.secao{
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secao_one,.secao_two{
+    margin-top: -130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-wrapper{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 7px;
+}
+.arrow-left,
+.arrow-right{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 120px;
+    line-height: 250px;
+    width: 40px;
+    text-align:center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+.arrow-right{
+    
+    left: auto;
+    right: 0;
+    bottom: 120px;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-right:hover , .arrow-left:hover{
+    opacity: 1;
+}
+.control > span, .control_one > span,.control_two > span,.control_three > span{
+    font-size: 5vw;
+}
+.item,.item_one,.item_two,.item_three{
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    position: relative;
+    
+    transition: all 600ms ease-in-out;
+    
+}
+.item:hover,.item_one:hover,.item_two:hover,.item_three:hover{
+    transform: scale(1.5);
+    z-index: 5;
+    
+    
+}
+.card,.card_one,.card_two,.card_three{
+    display: none;
+    position: relative;
+    text-align: center;
+    transform: scale(1.5);
+    background-color: rgba(0, 0, 0, 0.363);
+    height: 20vh;
+    padding-top: -10px;
+    margin-top: 65px;
+    z-index: 2;
+}
+ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+}
+li span{
+    padding-top: 15px;
+    font-size: 5em;
+    color: white;
+}
+.cabecalho{
+    background-color: transparent;
+    width: 100%;
+    transition: 1s;
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+    
+}
+.cabecalho-one{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabecalho-one > h1{
+    margin-right: 25px;
+    margin-left: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+.categoria li, .categoria1 li{
+    margin-right: 15px;
+}
+.categoria li > a, .categoria1 li > a{
+    text-decoration: none;
+    list-style: none;
+    color: #e7e7e7;
+    text-shadow: 1px 1px 1px black;
+}   
+.categoria li > a:hover, .categoria1 li > a:hover{
+    color: white;
+}
+.logo img{
+    width: 35px;
+    border-radius: 10px;
+    align-items: center;
+}
+.categoria1{
+    text-align: center;
+    align-items: center;
+    margin-left: 450px;
+}
+.categoria1 a > span{
+    font-size: 30px;
+}
+.imagem-fundo{
+    background-image: url(./imagenscarosel/jogosvorazes2.jpg);
+    background-size: cover;
+    
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+}
+.imagem-fundo .h1{
+    width: 475px;
+    padding-top: 340px;
+    margin-left: 50px;
+    
+}
+.imagem-fundo .h1 > p{
+    color: white;
+    text-shadow: 1px 1px 1px black ;
+    font-size: 1.3vw;
+
+}
+.ponta{
+    transform: rotate(180deg);
+}
+.btn{
+    font-size: 1.4rem;
+    display: flex;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    margin-right:15px ;
+    padding-right: 15px;
+    transition: 0.6s;
+}
+.btn_2{
+    background-color: #131313c4;
+    color: white;
+}
+.btn_2:hover{
+    background-color:  white;
+    color: #131313;
+}
+.btn_1:hover{
+    background-color:#131313;
+    color: white;
+}
+.btn > span{
+    margin-right: 11px;
+    font-size: bold;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.title{
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    margin-left: 22px;
+}
+.title_one,.title_two,.title_three{
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 35px;
+    margin-left: 22px;
+    margin-bottom: 113px;
+    margin-top: -130px;
+    margin-left: 22px;
+}
+.title_three{
+    margin-bottom: -15px;
+}
+.rodape{
+    width: 1000px;
+    margin-left: 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+}
+.rodape a{
+    text-decoration: none;
+    color: #ccc;
+}
+.rodape a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.rodape p{
+    padding-top: 15px;
+    font-size: 13px;
+    
+}
+.imgs img{
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-right: 10px;
+}
+.codigo{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom:15px ;
+}
+ 
